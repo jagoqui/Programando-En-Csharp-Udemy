@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ResolviendoUnEjercicio.Ejercicios
 {
-    /*
-    Aquí podemos ver un ejemplo de un ejercicio de código. Con estos ejercicios, más allá de contestar preguntas de selección múltiple, 
+    /*Aquí podemos ver un ejemplo de un ejercicio de código. Con estos ejercicios, más allá de contestar preguntas de selección múltiple, 
     podrás poner a prueba lo aprendido a lo largo del curso. Aunque son opcionales, estos ejercicios te pueden ayudar a verificar que realmente 
     dominas el material, o a descubrir que tienes algunas dudas pendientes de responder. 
 
