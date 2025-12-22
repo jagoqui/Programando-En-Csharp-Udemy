@@ -1,22 +1,19 @@
 namespace DecisionesyBucles.Ejercicios
 {
     /*
-    Utiliza "if-else" para determinar cuál entero es más grande, a o b. No tienes que declarar estas variables, pues ya esto está hecho.
+    Utiliza "if-else" para determinar cuï¿½l entero es mï¿½s grande, a o b. No tienes que declarar estas variables, pues ya esto estï¿½ hecho.
 
-    Debes asignar el valor más grande a la variable resultado.
+    Debes asignar el valor mï¿½s grande a la variable resultado.
 
-    Tú código debe ir debajo del comentario y encima del return.
+    Tï¿½ cï¿½digo debe ir debajo del comentario y encima del return.
 
-    Remueve las dos líneas indicadas más abajo para descomentar el código y comenzar el ejercicio.
+    Remueve las dos lï¿½neas indicadas mï¿½s abajo para descomentar el cï¿½digo y comenzar el ejercicio.
      */
 
     public class NumeroMayor
     {
        public int DeterminarElNumeroMayor(int a, int b){
-            int resultado = 0;
-            
-            // Tu código debajo de esta línea
-            
+            int resultado = a > b ? a : b;
             return resultado;
         }
     }

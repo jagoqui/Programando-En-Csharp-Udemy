@@ -1,11 +1,11 @@
 namespace DecisionesyBucles.Ejercicios
 {
     /*
-    Escribir un programa que muestre en pantalla los números del 1 hasta n, sustituyendo los múltiplos de 3 por la palabra “fizz”, los múltiplos de 5 por “buzz” y los múltiplos de ambos, es decir, los múltiplos de 3 y 5 (o de 15), por la palabra “fizzbuzz”.
+    Escribir un programa que muestre en pantalla los nï¿½meros del 1 hasta n, sustituyendo los mï¿½ltiplos de 3 por la palabra ï¿½fizzï¿½, los mï¿½ltiplos de 5 por ï¿½buzzï¿½ y los mï¿½ltiplos de ambos, es decir, los mï¿½ltiplos de 3 y 5 (o de 15), por la palabra ï¿½fizzbuzzï¿½.
 
     La variable n es un entero la cual ya viene dada, no tienes que declararla.
 
-    Ejemplo, si n es 15, pues en la consola se debe imprimir (fíjate que es fizz, buzz y fizbuzz sin mayúsculas):
+    Ejemplo, si n es 15, pues en la consola se debe imprimir (fï¿½jate que es fizz, buzz y fizbuzz sin mayï¿½sculas):
 
     1
     2
@@ -30,8 +30,25 @@ namespace DecisionesyBucles.Ejercicios
     {
         public static void Realizar(int n)
         {
-            // Tu código debajo de esta línea
-
+            for (int i = 1; i <= n; i++)
+            {
+                if (i % 15 == 0)
+                {
+                    Console.WriteLine("fizzbuzz");
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine("fizz");
+                }
+                else if (i % 5 == 0)
+                {
+                    Console.WriteLine("buzz");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }
         }
     }
 }
