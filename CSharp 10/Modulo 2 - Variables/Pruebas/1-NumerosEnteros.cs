@@ -8,7 +8,7 @@ namespace Pruebas
     public class NumerosEnterosPruebas
     {
         [TestMethod]
-        public void ElMétodoDevuelve42()
+        public void ElMetodoDevuelve42()
         {
             var clase = new NumerosEnteros();
             var tipo = clase.GetType();
@@ -17,7 +17,7 @@ namespace Pruebas
 
             if (metodo.Length == 0)
             {
-                Assert.Fail("Debes implementar el método Ejercicio");
+                Assert.Fail("Debes implementar el mï¿½todo Ejercicio");
             }
 
             var respuesta = tipo.InvokeMember("Ejercicio", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.InvokeMethod, 
