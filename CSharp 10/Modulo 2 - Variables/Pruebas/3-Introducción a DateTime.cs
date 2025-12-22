@@ -8,7 +8,7 @@ namespace Pruebas
     public class IntroduccionADateTimePruebas
     {
         [TestMethod]
-        public void ElMétodoDevuelveElDateTimeCorrecto()
+        public void ElMetodoDevuelveElDateTimeCorrecto()
         {
             var clase = new IntroduccionADateTime();
             var tipo = clase.GetType();
@@ -17,7 +17,7 @@ namespace Pruebas
 
             if (metodo.Length == 0)
             {
-                Assert.Fail("Debes implementar el método Ejercicio");
+                Assert.Fail("Debes implementar el mï¿½todo Ejercicio");
             }
 
             var respuesta = tipo.InvokeMember("Ejercicio", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.InvokeMethod, 
@@ -25,7 +25,7 @@ namespace Pruebas
 
             if (respuesta is null)
             {
-                Assert.Fail("El método no debe retornar null");
+                Assert.Fail("El mï¿½todo no debe retornar null");
             }
 
             if (respuesta is not DateTime)
@@ -35,9 +35,9 @@ namespace Pruebas
 
             var respuestaDT = (DateTime)respuesta;
             var esperado = new DateTime(2022, 5, 12, 10, 0, 0);
-            Assert.AreEqual(esperado.Month, respuestaDT.Month, "El mes es incorrecto. Debió ser el mes 5");
-            Assert.AreEqual(esperado.Day, respuestaDT.Day, "El día es incorrecto. Debió ser el día 12");
-            Assert.AreEqual(esperado.Hour, respuestaDT.Hour, "La hora es incorrecta. Debió ser las 10 AM");
+            Assert.AreEqual(esperado.Month, respuestaDT.Month, "El mes es incorrecto. Debiï¿½ ser el mes 5");
+            Assert.AreEqual(esperado.Day, respuestaDT.Day, "El dï¿½a es incorrecto. Debiï¿½ ser el dï¿½a 12");
+            Assert.AreEqual(esperado.Hour, respuestaDT.Hour, "La hora es incorrecta. Debiï¿½ ser las 10 AM");
         }
     }
 }

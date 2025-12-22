@@ -12,7 +12,7 @@ namespace Pruebas
         [DataRow(7,30)]
         [DataRow(-1,22)]
         [DataTestMethod]
-        public void ElMétodoDevuelveElValorCorrecto(int parametro, int esperado)
+        public void ElMetodoDevuelveElValorCorrecto(int parametro, int esperado)
         {
             var clase = new OtrasOperacionesBinarias();
             var respuesta = clase.Ejercicio(parametro);

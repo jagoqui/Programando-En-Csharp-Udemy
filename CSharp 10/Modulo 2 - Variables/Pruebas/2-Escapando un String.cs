@@ -8,7 +8,7 @@ namespace Pruebas
     public class EscapandoUnStringPruebas
     {
         [TestMethod]
-        public void ElMétodoDevuelveElStringCorrecto()
+        public void ElMetodoDevuelveElStringCorrecto()
         {
             var clase = new EscapandoUnString();
             var tipo = clase.GetType();
@@ -17,7 +17,7 @@ namespace Pruebas
 
             if (metodo.Length == 0)
             {
-                Assert.Fail("Debes implementar el método Ejercicio");
+                Assert.Fail("Debes implementar el mÃ©todo Ejercicio");
             }
 
             var respuesta = tipo.InvokeMember("Ejercicio", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.InvokeMethod, 
@@ -25,7 +25,7 @@ namespace Pruebas
 
             if (respuesta is null)
             {
-                Assert.Fail("El método no debe retornar null");
+                Assert.Fail("El mï¿½todo no debe retornar null");
             }
 
             if (respuesta is not string)
@@ -33,7 +33,7 @@ namespace Pruebas
                 Assert.Fail("El tipo de dato de retorno debe ser un string");
             }
 
-            var esperado = "Este string contiene \\ y también \" pues lo escapamos";
+            var esperado = "Este string contiene \\ y tambiï¿½n \" pues lo escapamos";
             Assert.AreEqual(esperado, respuesta.ToString());
         }
     }
