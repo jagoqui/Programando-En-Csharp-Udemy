@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 namespace Funciones.Ejercicios
 {
     /*
-    Tenemos una función ImprimirSumaYMultiplicacion la cual recibe 3 parámetros del tipo entero. La idea es:
+    Tenemos una funciï¿½n ImprimirSumaYMultiplicacion la cual recibe 3 parï¿½metros del tipo entero. La idea es:
 
-    - Sumar los dos primeros parámetros
+    - Sumar los dos primeros parï¿½metros
 
-    - Multiplicar los dos primeros parámetros
+    - Multiplicar los dos primeros parï¿½metros
 
     - Imprimir en la consola n veces el siguiente texto:
 
     VALOR_SUMA - VALOR_MULTIPLICACION
 
-    Donde VALOR_SUMA es el resultado de sumar los dos primeros parámetros, mientras que VALOR_MULTIPLICACION 
-    es el resultado de multiplicar los dos primeros parámetros.
+    Donde VALOR_SUMA es el resultado de sumar los dos primeros parï¿½metros, mientras que VALOR_MULTIPLICACION 
+    es el resultado de multiplicar los dos primeros parï¿½metros.
 
-    Aquí un ejemplo de lo que esperamos tener impreso en la consola si a = 3, b = 4 y veces = 2:
+    Aquï¿½ un ejemplo de lo que esperamos tener impreso en la consola si a = 3, b = 4 y veces = 2:
 
     7 - 12
     7 - 12
@@ -29,37 +29,45 @@ namespace Funciones.Ejercicios
     
     Lo que debes hacer
 
-    - Crear 3 variables que almacecen una función cada una
+    - Crear 3 variables que almacecen una funciï¿½n cada una
 
-    - En una variable sumar debes colocar una función anónima que sume sus dos parámetros
+    - En una variable sumar debes colocar una funciï¿½n anï¿½nima que sume sus dos parï¿½metros
 
-    - En una variable multiplicar debes colocar una función anónima que multiplique sus dos parámetros
+    - En una variable multiplicar debes colocar una funciï¿½n anï¿½nima que multiplique sus dos parï¿½metros
 
-    - En una variable imprimir debes colocar una función anónima que imprima n veces el texto con el formato descrito arriba.
+    - En una variable imprimir debes colocar una funciï¿½n anï¿½nima que imprima n veces el texto con el formato descrito arriba.
 
-    - Colocar estas variables en el lugar indicado en el código.
+    - Colocar estas variables en el lugar indicado en el cï¿½digo.
 
     Nota: Para imprimir en la consola utiliza Console.WriteLine.
 
-    Remueve las dos líneas indicadas más abajo para descomentar el código y comenzar el ejercicio.
+    Remueve las dos lï¿½neas indicadas mï¿½s abajo para descomentar el cï¿½digo y comenzar el ejercicio.
 
      */
 
     public class FuncionesAnonimas
     {
-        /* remueve esta línea para descomentar
         public void ImprimirSumaYMultiplicacion(int a, int b, int veces)
         {
-            // Tú codigo va debajo de aquí
+            // Tï¿½ codigo va debajo de aquï¿½
+            Func<int, int, int> sumar = (int x, int y) =>  x + y;
+            Func<int, int, int> multiplicar = (int x, int y) => x * y;
+            Action<int, int, int> imprimir = (int suma, int multiplicacion, int n) =>
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    Console.WriteLine($"{suma} - {multiplicacion}");
+                }
+            };
 
 
 
-            // Tú codigo va encima de aquí
+            // Tï¿½ codigo va encima de aquï¿½
 
             int suma = sumar(a, b);
             int multiplicacion = multiplicar(a, b);
             imprimir(suma, multiplicacion, veces);
         }
-        */ //<-- remueve esta línea para descomentar
+
     }
 }

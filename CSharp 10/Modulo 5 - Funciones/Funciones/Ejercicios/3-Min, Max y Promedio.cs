@@ -7,20 +7,35 @@ using System.Threading.Tasks;
 namespace Funciones.Ejercicios
 {
     /*
-    Implementa una función, llamada ObtenerMinMaxPromedio, que reciba un arreglo de enteros, y devuelva el valor máximo de dicho arreglo, 
-    el valor mínimo, y el valor promedio.
+    Implementa una funciï¿½n, llamada ObtenerMinMaxPromedio, que reciba un arreglo de enteros, y devuelva el valor mï¿½ximo de dicho arreglo, 
+    el valor mï¿½nimo, y el valor promedio.
 
-    Para este ejercicio, utilizaremos parámetros out para extraer los tres valores.
+    Para este ejercicio, utilizaremos parï¿½metros out para extraer los tres valores.
 
-    La función devolverá true si el arreglo de enteros tiene al menos un elemento, si tiene cero elementos devolverá false.
+    La funciï¿½n devolverï¿½ true si el arreglo de enteros tiene al menos un elemento, si tiene cero elementos devolverï¿½ false.
 
-    El orden de los parámetros es: int[] numeros, int minimo, int maximo, double promedio
+    El orden de los parï¿½metros es: int[] numeros, int minimo, int maximo, double promedio
 
-    Nota: debes de colocar out en los parámetros adecuados.
+    Nota: debes de colocar out en los parï¿½metros adecuados.
      */
 
     public class MinMaxPromedio
     {
-        // Tu código debajo de esta línea
+        public static bool ObtenerMinMaxPromedio(int[] numeros, out int minimo, out int maximo, out double promedio)
+        {
+            if (numeros.Length == 0)
+            {
+                minimo = 0;
+                maximo = 0;
+                promedio = 0;
+                return false;
+            }
+
+            minimo = numeros.Min();
+            maximo = numeros.Max();
+            promedio = numeros.Average();
+
+            return true;
+        }
     }
 }

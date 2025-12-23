@@ -17,9 +17,7 @@ namespace Variables.Ejercicios
     {
         public int? DeterminarElNumeroMayor(int[] numeros)
         {
-            int? resultado = 0;
-
-            // Tu código debajo de esta línea
+            int? resultado = numeros.Length == 0 ? null : numeros.Max();
 
 
             return resultado;

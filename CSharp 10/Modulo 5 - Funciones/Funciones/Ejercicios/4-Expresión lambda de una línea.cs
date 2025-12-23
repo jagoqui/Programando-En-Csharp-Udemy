@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 namespace Funciones.Ejercicios
 {
     /*
-    Implemente una función Multiplicar, que reciba dos enteros y devuelva la multiplicación de estos. 
+    Implemente una funciï¿½n Multiplicar, que reciba dos enteros y devuelva la multiplicaciï¿½n de estos. 
 
-    Utilice una expresión lambda, de modo que la solución sea de una sola línea.
+    Utilice una expresiï¿½n lambda, de modo que la soluciï¿½n sea de una sola lï¿½nea.
      */
 
-    public class ExpresiónLambdaDeUnaLínea
+    public class ExpresiÃ³nLambdaDeUnaLÃ­nea
     {
-        // Tu código debajo de esta línea
+        int Multiplicar(int a, int b) => a * b;
 
     }
 }

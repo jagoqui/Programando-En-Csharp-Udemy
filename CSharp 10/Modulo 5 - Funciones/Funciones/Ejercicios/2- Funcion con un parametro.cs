@@ -7,16 +7,19 @@ using System.Threading.Tasks;
 namespace Funciones.Ejercicios
 {
     /*
-    Crea una función, llamada Saludar, la cual reciba un parámetro del tipo string, y devuelva el mensaje:
+    Crea una funciï¿½n, llamada Saludar, la cual reciba un parï¿½metro del tipo string, y devuelva el mensaje:
 
     "Hola, VALOR_DEL_PARAMETRO"
 
-    Donde VALOR_DEL_PARAMETRO representa el valor del parámetro de la función.
+    Donde VALOR_DEL_PARAMETRO representa el valor del parï¿½metro de la funciï¿½n.
      */
 
     public class FuncionConParametro
     {
-        // Tu código va debajo de esta línea
+        string Saludar(string nombre)
+        {
+            return $"Hola, {nombre}";
+        }
 
     }
 }

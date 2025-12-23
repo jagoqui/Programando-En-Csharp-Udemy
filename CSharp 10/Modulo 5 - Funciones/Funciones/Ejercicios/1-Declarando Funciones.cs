@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 namespace Funciones.Ejercicios
 {
     /*
-   Haz que la función DiaActual:
+   Haz que la funciï¿½n DiaActual:
 
     - Devuelva el tipo de dato int
 
-    - Devuelva el número del día de hoy en el mes
+    - Devuelva el nï¿½mero del dï¿½a de hoy en el mes
 
     Nota: Recuerda que puedes usar DateTime para obtener la fecha actual.
      */
 
     public class DeclarandoFunciones
     {
-        public void ObtenerDiaActual()
+        public int ObtenerDiaActual()
         {
-
+            return DateTime.Today.Day;
         }
     }
 }

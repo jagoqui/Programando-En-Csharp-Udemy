@@ -2,3 +2,5 @@
 // Los ejercicios se encuentran en la carpeta 'Ejercicios'
 // Las soluciones de los ejercicios se encuentran en la carpeta 'Soluciones'
 Console.WriteLine("Hola, mundo");
+
+var today = DateTime.Today.ToString("F:G:G");
