@@ -1,41 +1,57 @@
 namespace Clases.Ejercicios.Ejercicio1
 {
-    /*
-    Este ejercicio se divide en dos partes:
+  /*
+  Este ejercicio se divide en dos partes:
 
-    A) Crea una clase llamada "Persona" la cual va a tener 3 campos: 
+  A) Crea una clase llamada "Persona" la cual va a tener 3 campos: 
 
-    1) _nombre (tipo de dato string), 
+  1) _nombre (tipo de dato string), 
 
-    2) _apellido (tipo de datostring), 
+  2) _apellido (tipo de datostring), 
 
-    3) _fechaNacimiento (tipo de dato DateTime).
+  3) _fechaNacimientoï¿½(tipo de dato DateTime).
 
-    Nota: respeta las mayúsculas en los nombres, tanto de la clase como de los campos.
+  Nota: respeta las mayï¿½sculas en los nombres, tanto de la clase como de los campos.
 
-    Nota 2: La clase debe tener el modificador de acceso "public". (Igual que la clase Ejercicio que tenemos más abajo).
+  Nota 2: La clase debe tener el modificador de acceso "public". (Igual que la clase Ejercicio que tenemos mï¿½s abajo).
 
-    Nota 3: Igualmente, los campos deben tener el modificador de acceso public.
+  Nota 3: Igualmente, los campos deben tener el modificador de acceso public.
 
-    B) Crea un método llamado ConstruirPersona dentro de la clase Ejercicio. Este método debe:
+  B) Crea un mï¿½todo llamado ConstruirPersona dentro de la clase Ejercicio. Este mï¿½todo debe:
 
-    1) Tener Persona como tipo de dato de salida
+  1) Tener Persona como tipo de dato de salida
 
-    2) Tener 3 parámetros: nombre (string), apellido (string) y fechaNacimiento (DateTime)
+  2) Tener 3 parï¿½metros: nombre (string), apellidoï¿½(string) y fechaNacimiento (DateTime)
 
-    3) El método debe instanciar una Persona utilizando los 3 parámetros.
+  3) El mï¿½todo debe instanciar una Persona utilizando los 3 parï¿½metros.
 
-    4) El métoro debe devolver dicha instancia de la clase Persona.
-      */
+  4) El mï¿½toro debe devolver dicha instancia de la clase Persona.
+    */
 
-    // Aquí puedes crear la clase (Nota: colócala como public)
-
-
+  // Aquï¿½ puedes crear la clase (Nota: colï¿½cala como public)
 
 
-    public class Ejercicio
+  public class Persona
+  {
+    public string _nombre;
+    public string _apellido;
+    public DateTime _fechaNacimiento;
+  }
+
+
+  public class Ejercicio
+  {
+
+    public Persona ConstruirPersona(string nombre, string apellido, DateTime fechaNacimiento)
     {
+      Persona persona = new Persona();
+      persona._nombre = nombre;
+      persona._apellido = apellido;
+      persona._fechaNacimiento = fechaNacimiento;
 
+      return persona;
     }
+
+  }
 
 }
